@@ -1,0 +1,4 @@
+"0","table_ga <-readRDS("
+"0","  here::here(""output/table1.rds""))"
+"0",""
+"0","print(table_ga)"
