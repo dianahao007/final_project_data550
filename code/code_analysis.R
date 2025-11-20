@@ -21,7 +21,7 @@ ga_race <- ga_data %>%
   filter(Class == "Obesity / Weight Status",
          StratificationCategory1 == "Race/Ethnicity")
 
-table1 <- ga_race %>%
+table1_gt <- ga_race %>%
   gtsummary::tbl_summary(
     by = Stratification1,
     include = c(Sample_Size, Data_Value, Data_Value_Alt,
@@ -32,6 +32,7 @@ table1 <- ga_race %>%
   gtsummary::bold_labels()
 
 #Save Table 1
+table1 <- as_gt(table1_gt)
 
 saveRDS(
   table1,

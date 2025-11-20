@@ -7,3 +7,6 @@ table_figure:
 .PHONY: clean
 clean:
 	rm -f output/*.rds && rm -f report.html
+	
+install:
+	Rscript -e "renv::restore()"
