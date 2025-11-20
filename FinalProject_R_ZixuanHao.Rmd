@@ -21,6 +21,7 @@ Import and examine the dataset.
 library(tidyverse)
 library(here)
 library(gtsummary)
+
 # Set project root
 here::i_am("FinalProject_R_ZixuanHao.Rmd")
 
