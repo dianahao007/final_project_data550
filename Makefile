@@ -10,7 +10,10 @@ clean:
 	
 install:
 	Rscript -e "renv::restore()"
-	
+
+docker-build:
+	docker build -t dianahao007/final_project_data550 .
+
 docker-report:
 	mkdir -p report
 	docker run --rm \
@@ -20,6 +23,4 @@ docker-report:
 docker-report-win:
 	mkdir -p report
 	docker run --rm \
-	  -v "/$$(pwd)/report:/home/rstudio/project/report" \
-	  dianahao007/final_project_data550:latest
-
+	  -v "/$$(pwd)/r

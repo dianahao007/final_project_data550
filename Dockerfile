@@ -47,5 +47,4 @@ RUN mkdir -p code output data report
 COPY data data
 COPY code code
 
-# FINAL STEP — Generate report into /home/rstudio/report
-CMD make && mv FinalProject_R_ZixuanHao.html /home/rstudio/project/report/
+# FINAL STEP — Generate rep

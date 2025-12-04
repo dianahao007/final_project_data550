@@ -25,10 +25,13 @@ The workflow demonstrates reproducible data science principles:
 * Summary & Interpretation  
 
 # Report Description — FinalProject_R_ZixuanHao.html
-- **FinalProject_R_ZixuanHao.html is located in the `/final_project_R` folder.**
+- **FinalProject_R_ZixuanHao.html is located in the `/report` folder.**
+
+* **How to steps**
 - **use `make install` to install the project environment**
 - **use `make all` to run the full analysis pipeline**
 - **use `make clean` to clean generated files**
+- **use `docker-build` to build a docker image from Dockerfile**
 - **use `make docker-report` to run automated report in Mac/Linux system**
 - **use `make docker-report-win` to run automated report in windows system**
 ---
